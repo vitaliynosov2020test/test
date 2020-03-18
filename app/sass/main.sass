@@ -1,0 +1,524 @@
+@import config
+
+// CUSTOM USER STYLES & IMPORTS
+
+.wrapper
+  overflow: hidden
+ 
+.containet
+   max-width: 1920px
+   margin: 0 auto
+   overflow: hidden
+
+.header 
+  max-width: 100%
+  height: 100vh
+  position: relative
+  background: url(../images/header_bg.png) no-repeat center center
+ 
+.header__figure__top 
+  width: 0
+  height: 0
+  border-top: 248px solid #fff 
+  border-bottom: 0px solid #fff 
+  border-left: 0px solid transparent 
+  border-right: 1600px solid transparent
+  position: absolute 
+  top: 0
+  left: 0
+
+.header__figure__bottom 
+  width: 0
+  height: 0
+  border-top: 0px solid #fff 
+  border-bottom: 248px solid #fff 
+  border-left: 1600px solid transparent 
+  border-right: 0px solid transparent
+  position: absolute 
+  bottom: 0
+  right: 0
+
+.header__info 
+  width: 378px
+  color: #fff
+  font-family: "Myriad Pro"
+  font-size: 20px
+  font-weight: 400
+  line-height: 31px
+  text-transform: uppercase
+  letter-spacing: 0.4px
+  z-index: 10
+  position: absolute
+  top: 65%
+  left: 2%
+
+.header__hr
+  width: 42px
+  height: 1px
+  margin-bottom: 28px
+  background-color: #fff
+
+.section__content 
+  max-width: 1572px
+  margin-top: 20px
+  padding-top: 156px
+  margin: 0 auto
+  display: flex
+
+.content__left
+  max-width: 45%
+  margin-right: 15px
+  overflow: hidden
+  margin-bottom: 0px
+
+.content__info 
+  width: 100%
+  padding-left: 104px
+  margin-top: 72px
+  display: flex
+  flex-direction: column
+  p 
+    width: 85%
+    color: #000000
+    font-family: "Dala Moa Light"
+    font-size: 21px
+    font-weight: 400
+    line-height: 33px
+    letter-spacing: 0.42px
+
+.info__header 
+  width: 70%
+  color: #000000
+  font-family: "Dala Floda"
+  font-size: 21px
+  font-weight: 500
+  line-height: 33px
+  text-transform: uppercase
+  letter-spacing: 0.42px
+
+.content__left__foto__brand
+  max-width: 548px
+  margin-top: 140px
+  padding-left: 112px
+  img 
+    width: 100%
+
+.content__left__foto__model 
+  max-width: 569px
+  padding-top: 75px
+  margin-left: 244px
+  margin-bottom: 75px
+  img 
+    width: 100%
+    height: 420px
+  
+.rigth__foto 
+  margin-top: 200px
+  max-width: 918px
+  padding-top: 14px
+  padding-bottom: 14px
+  padding-right: 85px
+  padding-left: 35px
+  img 
+    width: 100%
+     
+.content__rigth
+  max-width: 55%
+  padding-right: 10px
+
+.rigth__text
+  max-width: 544px
+  padding-left: 126px
+  color: #000000
+  font-family: "Futura - Bk"
+  font-size: 21px
+  font-weight: 400
+  line-height: 33px
+  letter-spacing: 0.42px
+  p 
+    margin: 0px
+
+.rigth__text__rigth
+  max-width: 433px
+  margin-left: 260px
+  color: #000000
+  font-family: "Dala Moa Light"
+  font-size: 21px
+  font-weight: 400
+  line-height: 33px
+  letter-spacing: 0.42px
+
+.figth__text__left
+  max-width: 433px
+  margin-top: 152px
+  padding-left: 48px
+  color: #000000
+  font-family: "Dala Moa Light"
+  font-size: 21px
+  font-weight: 400
+  line-height: 33px
+  letter-spacing: 0.42px
+
+
+.content__header 
+  max-width: 536px
+  margin-left: 70px
+  overflow: hidden
+  display: flex
+  align-items: center
+  color: #000000
+  font-family: "Dala Floda"
+  font-size: 48px
+  font-weight: 500
+  line-height: 59px
+  text-transform: uppercase
+  position: relative
+
+.content__text
+  width: 467px
+  margin-left: 20%
+  a 
+    color: #000
+  h1 
+    font-size: 49px
+    margin: 0px
+
+.content__hr 
+  width: 105px
+  position: absolute
+  left: 4%
+  top: 0%
+  
+.content__left__foto
+  margin-top: 135px
+  width: 100%
+  display: flex
+  justify-content: flex-end
+  
+.section__video 
+  width: 100%
+  padding-top: 256px
+  padding-bottom: 227px
+  color: #fff
+  text-align: center
+  font-size: 56px
+  background: url(../images/fotos/video_img.png) no-repeat center center
+
+.video__icon 
+  &:hover 
+    cursor: pointer
+
+.section__info 
+  max-width: 919px
+  margin: 0 auto
+  text-align: center
+  h2 
+    text-align: center
+    color: #000000
+    font-family: "Dala Floda"
+    font-size: 58px
+    font-weight: 500
+    line-height: 54px
+    letter-spacing: 1.16px
+  p 
+    color: #807f7b
+    font-family: "Futura - Bk"
+    font-size: 21px
+    font-weight: 400
+    line-height: 33px
+    letter-spacing: 0.42px
+
+.section__product
+  max-width: 1300px
+  min-width: 0px
+  // min-width: 0px для корректной работы в slader если есть display: flex
+  margin: 0 auto
+  margin-top: 88px
+  display: flex
+  justify-content: space-between
+
+.product 
+  width: 18%
+  padding: 20px
+  padding: 30px
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  flex-direction: column
+
+.product__img 
+  width: 100%
+  display: flex
+  justify-content: center
+  img 
+    width: 100%
+    height: 179px
+
+.product__header 
+  width: 100%
+  display: flex
+  justify-content: center
+  margin-top: 27px
+  color: #000000
+  font-family: Futura
+  font-size: 19px
+  font-weight: 500
+  line-height: 56.04px
+  text-transform: uppercase
+  letter-spacing: 1.92px
+
+.product__info 
+  width: 100%
+  display: flex
+  justify-content: center
+  color: #807f7b
+  font-family: "Futura - Dem Bld"
+  font-size: 15px
+  font-weight: 400
+  text-transform: uppercase
+  letter-spacing: 2.23px
+
+.info__hr
+  width: 96px
+  height: 2px
+  margin: 0 auto
+  display: block
+  background-color: #807f7b
+
+.footer 
+  max-width: 100%
+  margin-top: 72px
+  margin-bottom: 112px
+  display: flex
+  justify-content: center
+  a 
+    height: 62px
+    padding: 0px 50px 0px 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 1px solid #000
+    text-decoration: none
+    color: #000
+    font-family: "Futura - Dem Bld"
+    font-size: 15px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 2.23px
+
+// slider
+
+.slick-list 
+  overflow: hidden
+
+/* Лента слайдов */
+.slick-track
+  display: flex
+
+
+@media (max-width: 1200px) 
+  .container 
+    max-width: 970px 
+
+  .header__figure__top 
+    border-top: 88px solid #fff 
+
+  .header__figure__bottom 
+    border-bottom: 88px solid #fff 
+
+  .section__content
+    width: 100%
+    margin-top: 0px
+    padding-top: 0px
+    display: flex
+    flex-direction: column
+
+  .content__left
+    max-width: 100%
+    display: flex
+    flex-direction: column
+    padding-right: 0px
+    margin-right: 0px
+
+  .content__rigth
+    max-width: 100%
+
+  .content__header 
+    width: 100%
+    margin: 0 auto
+   
+  .content__left__foto__brand 
+    width: 100%
+    padding-left: 0px
+    margin: 0 auto
+    margin-top: 40px
+    img 
+      width: 100%
+
+  .content__info
+    width: 100%
+    padding-left: 0px
+    text-align: center
+    p 
+      width: 100%
+
+  .content__left__foto__model
+    width: 100%
+    margin: 0 auto
+    padding-top: 40px
+
+  .rigth__text
+    max-width: 100%
+    padding-left: 0px
+    text-align: center
+
+  .rigth__foto
+    margin-top: 0px
+    padding: 20px
+    margin: 0 auto
+
+  .rigth__text__rigth 
+    max-width: 100%
+    padding-left: 0px
+    text-align: center
+    margin: 0 auto
+    p 
+      max-width: 100%
+
+  .figth__text__left
+    max-width: 100%
+    padding-left: 0px
+    text-align: center
+    margin: 0 auto
+    p 
+      max-width: 100%
+
+  .section__info
+    p 
+      padding: 20px
+    h2 
+      font-size: 38px
+
+  .product__header
+    font-size: 16px
+
+  .info__header 
+    width: 100%
+  .content__left__foto__model
+    padding-left: 0px
+    padding-top: 40px
+    padding-bottom: 0px
+
+@media (max-width: 992px) 
+  .container 
+    max-width: 750px
+
+  .section__content
+    width: 100%
+    margin-top: 0px
+    padding-top: 0px
+    display: flex
+    flex-direction: column
+
+  .content__left
+    max-width: 100%
+    display: flex
+    flex-direction: column
+    padding-right: 0px
+    margin-right: 0px
+
+  .content__rigth
+    max-width: 100%
+
+  .content__header 
+    width: 100%
+    margin: 0 auto
+   
+  .content__left__foto__brand 
+    width: 100%
+    padding-left: 0px
+    margin: 0 auto
+    margin-top: 40px
+    img 
+      width: 100%
+
+  .content__info
+    width: 100%
+    padding-left: 0px
+    text-align: center
+    p 
+      width: 100%
+
+  .content__left__foto__model
+    width: 100%
+    margin: 0 auto
+    padding-top: 40px
+
+  .rigth__text
+    max-width: 100%
+    padding-left: 0px
+    text-align: center
+
+  .rigth__foto
+    margin-top: 0px
+    padding: 20px
+    margin: 0 auto
+
+  .rigth__text__rigth 
+    max-width: 100%
+    padding-left: 0px
+    text-align: center
+    margin: 0 auto
+    p 
+      max-width: 100%
+
+  .figth__text__left
+    max-width: 100%
+    padding-left: 0px
+    text-align: center
+    margin: 0 auto
+    p 
+      max-width: 100%
+
+  .section__info
+    p 
+      padding: 20px
+    h2 
+      font-size: 38px
+
+  .product__header
+    font-size: 16px
+
+  .info__header 
+    width: 100%
+  .content__left__foto__model
+    padding-left: 0px
+    padding-top: 40px
+    padding-bottom: 0px
+
+@media (max-width: 767px) 
+  .container 
+    max-width: none
+  .header__info
+    top: 45%
+
+  .content__text
+    font-size: 36px
+    margin-left: 0px
+    text-align: center
+  
+  .content__left__foto__brand
+    padding: 20px
+
+  .content__left__foto__model
+    padding: 20px
+
+  .content__hr
+    display: none
+
+  .footer 
+    a
+      padding: 0px 20px 0px 20px
+      font-size: 12px
+      
+    
